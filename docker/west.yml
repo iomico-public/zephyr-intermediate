@@ -1,0 +1,21 @@
+manifest:
+  version: "1.2"
+
+  remotes:
+    - name: zephyrproject-rtos
+      url-base: https://github.com/zephyrproject-rtos
+
+  projects:
+    - name: zephyr
+      remote: zephyrproject-rtos
+      revision: v3.7.2
+      import:
+        name-allowlist:
+          - cmsis
+          - mbedtls
+          - mcuboot
+          - picolibc
+          - segger
+          - tinycrypt
+          - trusted-firmware-m
+          - zcbor
